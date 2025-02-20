@@ -1,11 +1,12 @@
 <?php
 use app\Taxer;
+use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 class TaxerTest extends TestCase
 {
     private Taxer $taxer;
-    private $taxerMock;
+    private MockObject|Taxer $taxerMock;
 
     protected function setUp(): void
     {
